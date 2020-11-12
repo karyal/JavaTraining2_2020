@@ -1,5 +1,35 @@
 package collections.generics;
 
+class Person{
+	private int id;
+	private String name;	
+	
+	public Person() {
+		this.id=0;
+		this.name="";
+	}
+	public Person(int id, String name) {
+		this.id=id;
+		this.name=name;
+	}
+	public int getId() {
+		return this.id;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return this.id+", "+this.name;
+	}
+}
+
 class Example1{
 	private Object obj1;
 	
@@ -39,6 +69,11 @@ public class Example1Test {
 		//String
 		obj1 = new Example1();
 		obj1.set("Manish Rai");
+		System.out.println(obj1.get());
+		
+		Person p1 = new Person(1, "Krishna");
+		obj1 = new Example1();
+		obj1.set(p1);
 		System.out.println(obj1.get());
 	}
 }
