@@ -1,0 +1,35 @@
+Object Oriented Programming (OOP)
+1. Encapsulation
+- data members
+- constructors
+- getters
+- setters
+- process methods
+- access specifiers
+- this keyword
+
+- Nested Class (Inner Class)
+	- Class within a class is called nested class
+	
+2. Inheritance
+- extends
+- super keyword
+
+3. Polymorphism
+- method overloading
+- method overriding
+
+4. Abstraction
+- static method
+- static instance variable
+
+- final class
+- final variable
+- final methods
+
+- abstract class
+- abstract method
+
+- package
+- sub package
+- import package

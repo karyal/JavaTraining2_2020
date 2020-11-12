@@ -1,0 +1,50 @@
+Error: Compile time
+- Syntax Error : Program's grammar error
+	- Identify by - Compiler | IDE (Integrated Development Environment)
+	- Manually update/change as per syntax of language
+
+- Logical Error:
+	- No Syntax error
+	- No Runtime
+	- Only result is Wrong (logically)
+	
+	- Domain Knowledge	
+	- Debug - Line by Line Execution
+	Steps:
+		- Create Stop Point on Source Code
+		- Run Program on Debug Mode
+		- Step-In/Step-Out/Stop 
+
+Exception : Runtime Errors Handle Techniques - Exception Handling
+	- Input from Keyboard
+	- Process on CPU
+	
+	- No Syntax Error
+	- Generate Error - Based on Value Input [Input from Keyboard]
+	- Generate Error - While Processing [Value Error] [Process on CPU]
+		
+	- 1. ArithmeticException [+, -, *, /, %, sqrt, pow)
+	- 2. ArrayIndexOutOfBoundsException array - 5 elements (try to access >5th element)
+	- 3. StringIndexOutOfBoundsException
+	- 4. IOException
+	- 5. NullPointerException
+	- 6. FileNotFoundException	
+		
+	- 7. ClassNotFoundException 	
+	- 8. NoSuchFieldException
+	- 9. NoSuchMethodException
+	
+	
+	
+	
+	Handling Exceptions:
+	- try, catch
+	
+	Syntax
+		try{
+			Statement(s)
+		}
+		catch(ExceptionClass object){
+			Display Error Message
+		}
+	
