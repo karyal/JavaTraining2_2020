@@ -90,7 +90,6 @@ class Example3 implements Inf1 {
 }
 
 //Generic Array
-
 class Example4{	
 	private Object []myArray;
 	private int count = 0;
