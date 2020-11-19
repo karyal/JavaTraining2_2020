@@ -6,7 +6,7 @@ public class HashSetExample {
 	public static void main(String[] args) {
 		HashSet<String> hs=new HashSet<String>();
 		hs.add("Apple");
-		hs.add("Watermelon");		
+		hs.add("Watermelon");
 		hs.add("Orange");
 		hs.add("Pear");
 		hs.add("Cherry");
@@ -40,8 +40,7 @@ public class HashSetExample {
 		hs.add("Coconut");
 		hs.add("Avocado");
 		hs.add("Peach");
-		hs.add("Lemon");
-		
+		hs.add("Lemon");	
 		System.out.println(hs.size());
 		
 	}

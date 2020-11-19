@@ -4,27 +4,27 @@ import java.util.HashMap;
 
 public class HashMapExample {
 	public static void main(String[] args) {
-		HashMap<String, String> persons = new HashMap<String, String>();
-		persons.put("pid", "1");
-		persons.put("full_name", "Raj Rai");
-		persons.put("contact_address", "Kathmandu, Nepal");
+		HashMap<String, String> person = new HashMap<String, String>();
 		
-		System.out.println(persons);
+		person.put("pid", "1");
+		person.put("full_name", "Raj Rai");
+		person.put("contact_address", "Kathmandu, Nepal");
 		
-		System.out.println(persons.get("pid"));		
+		System.out.println(person); //{full_name=Raj Rai, pid=1, contact_address=Kathmandu, Nepal}
+		
+		System.out.println(person.get("pid"));		
 	
-		System.out.println(persons.size());
-		
-		System.out.println(persons.get("pid"));
-		
-		for(String str : persons.keySet()) {
+		System.out.println(person.size());
+			
+		for(String str : person.keySet()) {
 			System.out.println(str);
 		}
 		
-		for(String str : persons.values()) {
+		for(String str : person.values()) {
 			System.out.println(str);
 		}
 		
-		System.out.println(persons.remove("pid"));
+		person.remove("pid");
+		System.out.println(person);
 	}
 }

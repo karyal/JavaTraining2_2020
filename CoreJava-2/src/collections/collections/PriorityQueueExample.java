@@ -20,7 +20,6 @@ public class PriorityQueueExample {
 		System.out.println(pqueue.poll());
 		pqueue.remove();
 		System.out.println(pqueue.size());
-
 	}
 
 }
