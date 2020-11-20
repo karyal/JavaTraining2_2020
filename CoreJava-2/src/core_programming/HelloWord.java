@@ -1,4 +1,4 @@
-package core_java;
+package core_programming;
 
 public class HelloWord {
 	public static void main(String[] args) {

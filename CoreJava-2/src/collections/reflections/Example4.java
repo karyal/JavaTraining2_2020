@@ -11,17 +11,21 @@ public class Example4 {
 		Class c4 = person4.getClass();
 		
 		//Get Constructors
-		Constructor [] ctors = c4.getConstructors();
+		Constructor []ctors = c4.getConstructors();		
 		for (Constructor ctor: ctors) {
 			System.out.println("Name : "+ ctor.getName());
 			int modifier = ctor.getModifiers();
 			System.out.println("Modifier : "+Modifier.toString(modifier));
 			System.out.println("Parameters : "+ctor.getParameterCount());
+			Parameter [] parameters = ctor.getParameters();
+			for(Parameter parameter: parameters) {
+				System.out.println(parameter.toString());
+			}
 		}
 		System.out.println();
 	
 		//Get Methods
-		Method[] methods = c4.getDeclaredMethods();
+		Method []methods = c4.getDeclaredMethods();
 		for(Method method : methods) {
 			System.out.println("Method Name: " + method.getName());
 			System.out.println("Modifier : " + Modifier.toString(method.getModifiers()));
