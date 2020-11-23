@@ -19,7 +19,7 @@ class Person implements Serializable{
 }
 
 public class ObjectOutputStreamObjectInputStream {
-	final String FILE_NAME = "data1.txt";
+	final String FILE_NAME = "data5.txt";
 	
 	public void write(Person p) throws FileNotFoundException, IOException {
 		FileOutputStream fileOutputStream = new FileOutputStream(new File(FILE_NAME));

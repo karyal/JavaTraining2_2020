@@ -9,7 +9,7 @@ import java.io.IOException;
 public class BufferedWriterBufferedReader {
 	final String FILE_NAME = "data2.txt";
 	
-	public void write(String str) throws IOException{
+	public void write_data(String str) throws IOException{
 		FileWriter fileWriter = new FileWriter(FILE_NAME);
 		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 		bufferedWriter.write(str);
@@ -17,7 +17,7 @@ public class BufferedWriterBufferedReader {
 		fileWriter.close();
 	}
 	
-	public void read() throws IOException{
+	public void read_data() throws IOException{
 		FileReader fileReader = new FileReader(FILE_NAME);
 		BufferedReader bufferedReader = new BufferedReader (fileReader);
 		String tmp_line = bufferedReader.readLine();
@@ -27,8 +27,8 @@ public class BufferedWriterBufferedReader {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		String str_text="Java.io class package includes almost all operations of input and output needs. All of these stream classes represent the input source and output destination.";		
-		new BufferedWriterBufferedReader().write(str_text);
-		new BufferedWriterBufferedReader().read();		
+		String str_text="Java.io class package includes almost all operations of input and output needs.";		
+		new BufferedWriterBufferedReader().write_data(str_text);
+		new BufferedWriterBufferedReader().read_data();		
 	}
 }

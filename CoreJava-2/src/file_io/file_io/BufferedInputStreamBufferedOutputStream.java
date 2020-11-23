@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class BufferedInputStreamBufferedOutputStream {	
 	final String FILE_NAME = "data3.txt";	
+	
 	public void write(String str) throws FileNotFoundException, IOException{
 		FileOutputStream fileOutputStream = new FileOutputStream(FILE_NAME);
 		BufferedOutputStream bufferedOutputStream= new BufferedOutputStream(fileOutputStream);
