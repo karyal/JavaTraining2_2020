@@ -5,10 +5,8 @@ import java.io.File;
 import java.io.IOException;
 //https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html
 
-public class FileManagement {		
-	
-	static String FILE_NAME = "d:/data.txt";
-	
+public class FileManagement {			
+	static String FILE_NAME = "d:/data.txt";	
 	public static void f1() throws IOException {
 		//File Object Initialization
 		File file = new File(FILE_NAME);
@@ -27,13 +25,37 @@ public class FileManagement {
 			}
 		}
 	}
-	
-	
+		
 	public static void main(String[] args) throws IOException, Exception {		
-		//f2(); 
-		f4();
+		//f2();
+		//f3();
+		//f4();
+		//f5("D:/");
+		
+		//Task:-
+			//Create a files explorer which can explore files and folders of specific folder/drive.
 
+	}	
+	
+	public static void f5(String file_name) {
+		try {
+			File f = new File(file_name);
+			if (f.isDirectory()) {
+				File []files = f.listFiles();
+				System.out.println(files.length);
+				for(File file : files) {
+					if (file.isFile())
+						System.out.println(file.getName()+" File");
+					else
+						System.out.println(file.getName()+" Dir");
+				}				
+			}			
+		}
+		catch(Exception ex) {
+			System.out.println("Error : "+ex.getMessage());
+		}		
 	}
+	
 	public static void f4() {
 		//Manage Directory
 		try {
@@ -54,7 +76,7 @@ public class FileManagement {
 			System.out.println("Error : "+ex.getMessage());
 		}
 	}
-
+	
 	public static void f3() {
 		//File(String pathname)
 		File file1 = new File(FILE_NAME);  
@@ -75,7 +97,7 @@ public class FileManagement {
 		
 		File f1 = new File("d:/data.txt");
 		File f2 = new File("d:/data1.txt");
-		File f3 = f1;
+		File f3 = f1; //Copy by reference
 		File f4 = new File("d:/doc1.odt");
 		
 		System.out.println(f1.compareTo(f3)); //0 - Equals | >0, <0 - Not Equals		
@@ -86,6 +108,8 @@ public class FileManagement {
 		System.out.println(f2.isDirectory());
 		System.out.println(f2.isFile());
 		System.out.println(f2.isHidden());
+		
+		System.out.println(f1.equals(f3));
 		
 		/*
 		if(file1.exists()==false) {

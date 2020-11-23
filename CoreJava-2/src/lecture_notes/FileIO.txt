@@ -7,3 +7,6 @@
 - NIO (New Input/Output)
 	- Latest techniques
 	- Write, Read, Append on File 
+
+# Task-1
+	- Create a file explorer (SN, FILE NAME, File Type, File Size, Created/Modified Date) 
