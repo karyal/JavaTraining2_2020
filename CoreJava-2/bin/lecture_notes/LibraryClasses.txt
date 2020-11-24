@@ -1,0 +1,138 @@
+Commonly Used Library Classes in Java
+1. Arrays
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html
+
+Package
+java.lang.Object
+	java.util.Arrays
+
+Class Definition
+public class Arrays extends Object{ }
+
+Methods
+	static <T> List<T>	asList(T... a)
+	
+	
+# Concept of Array
+int nums[] = new int[5]; //0-4
+nums[0] = 8;
+...
+nums[4] = 6;
+System.out.println(nums[-1]);//ArrayIndexOutofBounds
+System.out.println(nums[0]);
+System.out.println(nums[4]);
+System.out.println(nums[5]);//ArrayIndexOutofBounds
+
+Methods
+List list1 = Arrays.asList(nums1);
+int binarySearch(byte[] a, byte key)
+int compare(byte[] a, byte[] b)
+boolean equals(int[] a, int[] a2)
+int hashCode(int[] a)
+void sort(int[] a)
+String		toString(int[] a)	
+
+Application: Arrays
+	- Read Values from User
+	- Search and Edit/Replace value in Array
+	- Search and Count a value in Array
+	- Sorting Array (ASC, DESC)
+	- Functions (Sum, Average, Min, Max)
+	- Compare Arrays
+	- Array to String/String to Array
+
+2. Math
+Package
+	java.lang.Object
+		java.lang.Math
+
+Class Definition
+	public final class Math extends Object { }
+	
+3. DecimalFormat 
+Package
+java.lang.Object
+	java.text.Format
+		java.text.NumberFormat
+
+
+Declare
+public class NumberFormat extends Format { }
+
+4. DecimalFormat - VVIP
+
+Package
+java.lang.Object
+	java.text.Format
+		java.text.NumberFormat
+			java.text.DecimalFormat
+
+Declare
+public class DecimalFormat extends NumberFormat { }
+
+- Application:
+	- Mathematical Application which works with Functions of Math Class/Decimal Format
+	
+5. Calendar 
+Package
+	java.lang.Object
+		java.util.Calendar
+
+Declare
+	public abstract class Calendar extends Object implements Serializable, Cloneable, Comparable<Calendar> { }
+
+6. Date
+Package
+	java.lang.Object
+		java.util.Date	
+
+Declare
+	public class Date extends Object implements Serializable, Cloneable, Comparable<Date> { }
+
+7. Locale 
+	java.lang.Object
+		java.util.Locale
+
+Declare
+	public final class Locale extends Object implements Cloneable, Serializable { }
+
+8. DateFormat
+Package
+	java.lang.Object
+		java.text.Format
+			java.text.DateFormat
+
+Declare
+	public abstract class DateFormat extends Format{ }
+
+
+9. SimpleDateFormat 
+	java.lang.Object
+		java.text.Format
+			java.text.DateFormat
+				java.text.SimpleDateFormat
+
+Declare
+	public class SimpleDateFormat extends DateFormat { }
+
+10. Joda-time
+URL : https://www.joda.org/joda-time/
+
+- Application
+	- string to datatime
+	- datetime to string
+	- datetime - format
+	- dattime difference calculate
+
+11. String
+Package
+	java.lang.Object
+		java.lang.String
+
+Declare
+	public final class String extends Object implements Serializable, Comparable<String>, CharSequence {}
+
+Function
+boolean	equals(Object anObject)
+
+				

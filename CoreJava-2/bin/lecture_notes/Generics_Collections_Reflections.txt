@@ -1,0 +1,11 @@
+- Generics
+	- General class which can hold any types of values.
+
+- Collections
+	- Can hold any types and any numbers of values
+	- List, Set, Queue, Map - Interfaces
+	- ArrayList, HashSet, PriorityQueue, HashMap - Classes 
+	
+- Reflections
+	- Getting the meta info about Class, Instance Variables, Constructors, Methods (Setters, Getters, Process Methods, toString)
+	- Setting/getting value on private member variable (instance variable) 

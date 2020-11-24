@@ -1,0 +1,51 @@
+JDBC - Java Database Connectivity
+
+Java Application					RDBMS (Relational Database Management System)
+- Accept inputs from User
+- Read Info from File				Store data with specific structure
+
+# RDBMS
+- Server (Machine which store database)
+- Server Port : Port on Server to connect database system 
+- Database (Data schema)
+- Tables, and Other Systems
+- Table (Structured)
+- User : Database System's User
+- Password : User's password of Database System
+  
+# DDL (Data Definition Language)
+	- Create table
+	- Alter table
+	- Add Column
+	- Remove Column
+	- Update Column
+	- Others (Constraints, PK, FK, Null, Not Null, Default)
+
+# DML (Data Manipulation Language)
+	- Insert, Update, Select, Delete Record on table
+
+# RDBMS
+	- Oracle
+	- Microsoft SQL Server
+	- MySQL - Select
+	- MariaDB. etc
+
+# NOSQL
+	- MangoDB
+	- SQLite
+	- InfluxDB
+
+# DB
+	- Ms Excel
+	- Ms Access
+	- Flat File
+	
+# MySQL Installation and Configuration
+# Server Info (localhost/127.0.0.1)
+# Port  (3306)
+# Create and Manage Database (mydb)
+# Create and Manage Table - Person(id, full_name, contact_address)
+# Create database User (admin, admin@123) - Add on mydb (all privileges)
+
+# Connect Database Server/Database
+

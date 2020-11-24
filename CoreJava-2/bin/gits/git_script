@@ -1,0 +1,13 @@
+Global Configuration
+git config --global user.name "Krishna Aryal"
+git config --global user.email "info.karyal@gmail.com"
+git config --global user.password "*******"
+
+Basic Commands
+# git clone
+# git add .
+# git commit -m "comment"
+# git status
+# git log
+# git push -u origin master 
+# git pull 
