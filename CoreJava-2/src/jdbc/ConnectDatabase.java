@@ -2,6 +2,7 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class ConnectDatabase {
@@ -51,26 +52,56 @@ public class ConnectDatabase {
 			String user = "admin";
 			String pass = "admin@123";				
 			
+			//oracle, ms sql server, mysql - RDBMS - SQL 
+			//sqlite, mangodb, influxdb - NOSQL
+			
+			
 			//Load Driver
 			Class.forName(driver);
 			//Connect database server with database
 			Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbname, user, pass);
-			System.out.println("Connect database server/database successfully");
+			//System.out.println("Connect database server/database successfully");			
 			//Insert Record
 			String str_sql = "INSERT INTO person(id, full_name, contact_address) VALUES(1, 'Krishna','Balaju')";
 			Statement stat = conn.createStatement();
 			stat.executeUpdate(str_sql);
 			System.out.println("Record insert successfully");
-			stat.close();
+			stat.close();			
 			conn.close();			
-			System.out.println("Close database server/database connection.");
+			//System.out.println("Close database server/database connection.");
 		}
 		catch (Exception e) {
 			System.out.println("Error : "+e.getMessage());
 		}	
 	}
 	
+	public static void select() {
+		try {			
+			String driver = "com.mysql.cj.jdbc.Driver";
+			String host ="localhost";
+			int port =3306;
+			String dbname = "java2";		
+			String user = "admin";
+			String pass = "admin@123";									
+			
+			//Load Driver
+			Class.forName(driver);
+			Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbname, user, pass);
+			
+			String str_sql = "SELECT id, full_name, contact_address FROM person";
+			Statement stat = conn.createStatement();
+			ResultSet rs = stat.executeQuery(str_sql);
+			while(rs.next()) {
+				System.out.println(rs.getInt("id")+" "+rs.getString("full_name")+" "+rs.getString("contact_address"));				
+			}
+			conn.close();	
+		}
+		catch (Exception e) {
+			System.out.println("Error : "+e.getMessage());
+		}
+	}
 	public static void main(String[] args) {
-
+		//insert();
+		select();
 	}
 }
