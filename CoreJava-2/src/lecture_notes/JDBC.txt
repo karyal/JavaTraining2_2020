@@ -41,11 +41,29 @@ Java Application					RDBMS (Relational Database Management System)
 	- Flat File
 	
 # MySQL Installation and Configuration
-# Server Info (localhost/127.0.0.1)
-# Port  (3306)
-# Create and Manage Database (mydb)
-# Create and Manage Table - Person(id, full_name, contact_address)
-# Create database User (admin, admin@123) - Add on mydb (all privileges)
+	# Server Info (localhost/127.0.0.1)
+	# Port  (3306)
+	# Create and Manage Database (java2)
+	# Create and Manage Table - Person(id, full_name, contact_address)
+	# Create database User (admin, admin@123) - Add on java2 (all privileges)
 
 # Connect Database Server/Database
+
+# Table - person
+	# id - int - 11
+	# full_name - varchar - 50
+	# contact_address - varchar - 50
+	
+	person
+	-------------------------------------------------
+	| id		|	full_name	|	contact_address	|
+	-------------------------------------------------
+	|	1		|	Krishna		|	Balaju			|
+	-------------------------------------------------
+	
+# Record insert
+INSERT INTO person(id, full_name, contact_address) VALUES(1, 'Krishna','Balaju')
+
+# Select Record
+SELECT id, full_name, contact_address FROM person
 
