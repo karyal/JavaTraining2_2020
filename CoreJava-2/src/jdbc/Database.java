@@ -117,7 +117,7 @@ public class Database {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbname, user, pass);			
 
 			//Update Record/Edit Record			
-			String str_sql = "UPDATE person SET full_name='New Name1', contact_address='new address1' WHERE id = 1";
+			String str_sql = "UPDATE person SET full_name='New Name1', contact_address='new address1' WHERE id = 3";
 			Statement stat = conn.createStatement();
 			stat.executeUpdate(str_sql);
 			System.out.println("Record update successfully");
@@ -156,10 +156,11 @@ public class Database {
 			System.out.println("Error : "+e.getMessage());
 		}	
 	}
+	
 	public static void main(String[] args) {
 		//connect()
 		//insert();
-		select();
+		//select();
 		//update();// Edit Record
 		//delete();
 
