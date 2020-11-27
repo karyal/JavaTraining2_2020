@@ -5,7 +5,7 @@ Java Application					RDBMS (Relational Database Management System)
 - Read Info from File				Store data with specific structure
 
 # RDBMS
-- Server (Machine which store database)
+- Server (Machine which store database): ip address/domain name
 - Server Port : Port on Server to connect database system 
 - Database (Data schema)
 - Tables, and Other Systems
@@ -29,6 +29,7 @@ Java Application					RDBMS (Relational Database Management System)
 	- Microsoft SQL Server
 	- MySQL - Select
 	- MariaDB. etc
+	- PostgreSQL
 
 # NOSQL
 	- MangoDB
@@ -38,7 +39,7 @@ Java Application					RDBMS (Relational Database Management System)
 # DB
 	- Ms Excel
 	- Ms Access
-	- Flat File
+	- Flat File (FoxPro)
 	
 # MySQL Installation and Configuration
 	# Server Info (localhost/127.0.0.1)
@@ -66,4 +67,8 @@ INSERT INTO person(id, full_name, contact_address) VALUES(1, 'Krishna','Balaju')
 
 # Select Record
 SELECT id, full_name, contact_address FROM person
+
+
+# Update Record
+UPDATE person SET full_name='New Name', contact_address='new address' WHERE id = 1
 
