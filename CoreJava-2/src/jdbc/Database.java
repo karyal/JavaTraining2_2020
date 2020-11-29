@@ -23,10 +23,10 @@ public class Database {
 
 		//Add jdbc library (mysql connector)
 
-		try {			
+		try {
 			String driver = "com.mysql.cj.jdbc.Driver";
-			String host ="localhost";
-			int port =3306;
+			String host = "localhost";
+			int port = 3306;
 			String dbname = "java2";		
 			String user = "admin";
 			String pass = "admin@123";									
@@ -50,19 +50,15 @@ public class Database {
 			int port =3306;
 			String dbname = "java2";		
 			String user = "admin";
-			String pass = "admin@123";				
-
-			//oracle, ms sql server, mysql - RDBMS - SQL 
-			//sqlite, mangodb, influxdb - NOSQL
-
-
+			String pass = "admin@123";
+			
 			//Load Driver
 			Class.forName(driver);
 			//Connect database server with database
 			Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbname, user, pass);
 			//System.out.println("Connect database server/database successfully");			
 			//Insert Record
-			String str_sql = "INSERT INTO person(id, full_name, contact_address) VALUES(1, 'Krishna','Balaju')";
+			String str_sql = "INSERT INTO person(id, full_name, contact_address) VALUES(2, 'Rajesh','Kalanki')";
 			Statement stat = conn.createStatement();
 			stat.executeUpdate(str_sql);
 			System.out.println("Record insert successfully");
@@ -75,6 +71,34 @@ public class Database {
 		}	
 	}
 
+	public static void insert(int id, String full_name, String contact_address) {
+		try {
+			String driver = "com.mysql.cj.jdbc.Driver";
+			String host ="localhost";
+			int port =3306;
+			String dbname = "java2";		
+			String user = "admin";
+			String pass = "admin@123";				
+			
+			//Load Driver
+			Class.forName(driver);
+			//Connect database server with database
+			Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+dbname, user, pass);
+			//System.out.println("Connect database server/database successfully");			
+			//Insert Record
+			String str_sql = "INSERT INTO person(id, full_name, contact_address) VALUES("+id+", '"+full_name+"','"+contact_address+"')";
+			Statement stat = conn.createStatement();
+			stat.executeUpdate(str_sql);
+			System.out.println("Record insert successfully");
+			stat.close();			
+			conn.close();			
+			//System.out.println("Close database server/database connection.");
+		}
+		catch (Exception e) {
+			System.out.println("Error : "+e.getMessage());
+		}	
+	}
+	
 	public static void select() {
 		try {			
 			String driver = "com.mysql.cj.jdbc.Driver";
@@ -159,8 +183,8 @@ public class Database {
 	
 	public static void main(String[] args) {
 		//connect()
-		//insert();
-		//select();
+		//insert(2,"Kiran Thapa","Dharan");
+		select();
 		//update();// Edit Record
 		//delete();
 
