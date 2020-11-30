@@ -1,13 +1,20 @@
 package threads;
 
 class MyThread3 extends Thread{
-	
+
 	public MyThread3(String name) {
 		super(name);
 	}
-	public void run() {
+	public void run(){
+
 		for(int i=1; i<=100; i++) {
 			System.out.println(this.getName()+" = "+i);
+			try {
+				Thread.sleep(500);
+			}
+			catch(Exception ex) {
+				System.out.println(ex.getMessage());
+			}
 		}
 	}
 }

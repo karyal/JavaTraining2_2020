@@ -3,10 +3,9 @@ package threads;
 class MyThread1 extends Thread{
 	@Override
 	public void run() {
-		for(int i = 1; i<=10; i++) {
-			System.out.print("i = "+i+" ");
+		for(int i = 1; i<=100; i++) {
+			System.out.println("i = "+i+" ");
 		}
-		System.out.println();
 	}
 }
 
@@ -17,6 +16,6 @@ public class ThreadTest2 {
 		//obj1.run();
 		//obj2.run();		
 		obj1.start();
-		obj2.start();				
+		obj2.start();
 	}
 }
