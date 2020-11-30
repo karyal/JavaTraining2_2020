@@ -68,7 +68,16 @@ INSERT INTO person(id, full_name, contact_address) VALUES(1, 'Krishna','Balaju')
 # Select Record
 SELECT id, full_name, contact_address FROM person
 
-
 # Update Record
 UPDATE person SET full_name='New Name', contact_address='new address' WHERE id = 1
+
+# Delete Record
+Delete from person
+Delete from person where id = 1
+Delete from person where full_name = 'Krishna'
+Delete from person where contact_address = 'KTM'
+
+# Database Export/Import
+- Export to SQL file
+- Import from SQL file
 
