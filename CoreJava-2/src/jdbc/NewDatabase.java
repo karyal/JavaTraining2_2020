@@ -84,16 +84,25 @@ public class NewDatabase {
 		}
 	}
 
-	public void search(int id) {
-		try {
+	public Person search(int id) {
+		Person p=new Person();
+		try {			
 			Connection conn = connect();
 			String str_sql = "SELECT id, full_name, contact_address FROM person where id=?";
 			PreparedStatement pstat = conn.prepareStatement(str_sql);
 			pstat.setInt(1, id);
-			ResultSet rs = pstat.executeQuery(); //Insert, Update, Delete
+			ResultSet rs = pstat.executeQuery(); //Insert, Update, Delete			
+			
+			int pid;
+			String full_name;
+			String contact_address;			
 			while(rs.next()) {
-				System.out.println(rs.getInt("id")+", "+rs.getString("full_name")+", "+rs.getString("contact_address"));				
-			}
+				System.out.println(rs.getInt("id")+", "+rs.getString("full_name")+", "+rs.getString("contact_address"));
+				pid = rs.getInt("id");
+				full_name = rs.getString("full_name");
+				contact_address = rs.getString("contact_address");
+				p = new Person(pid, full_name, contact_address);
+			}			
 			rs.close();
 			pstat.close();
 			conn.close();
@@ -101,6 +110,7 @@ public class NewDatabase {
 		catch(Exception ex) {
 			System.out.println("Error : "+ex.getMessage());
 		}
+		return p;
 	}
 	public static void main(String[] args) throws Exception{
 		NewDatabase db1 = new NewDatabase();

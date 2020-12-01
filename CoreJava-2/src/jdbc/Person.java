@@ -4,7 +4,13 @@ public class Person {
 	private int pid;
 	private String full_name;
 	private String contact_address;
-
+	
+	public Person() {
+		this.pid=0;
+		this.full_name="";
+		this.contact_address = "";
+	}
+	
 	public Person(int pid, String full_name, String contact_address) {
 		this.pid=pid;
 		this.full_name=full_name;
