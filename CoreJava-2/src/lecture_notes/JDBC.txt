@@ -81,3 +81,6 @@ Delete from person where contact_address = 'KTM'
 - Export to SQL file
 - Import from SQL file
 
+# Primary Key - Table Structure
+- Create/Remove
+
