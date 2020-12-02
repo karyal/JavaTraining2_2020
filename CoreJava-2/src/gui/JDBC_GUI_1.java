@@ -20,7 +20,7 @@ import jdbc.Person;
 public class JDBC_GUI_1 extends JFrame implements ActionListener{
 	JLabel lbl1, lbl2, lbl3, lbl4;
 	JTextField txt_1, txt_2, txt_3;
-	JButton btn_save, btn_search, btn_edit, btn_delete;
+	JButton btn_save, btn_search, btn_edit, btn_delete, btn_close;
 	
 	//JTable
 	DefaultTableModel tmodel = new DefaultTableModel();
@@ -50,12 +50,14 @@ public class JDBC_GUI_1 extends JFrame implements ActionListener{
 		btn_search=new JButton("SEARCH");
 		btn_edit = new JButton("EDIT");
 		btn_delete = new JButton("DELETE");
+		btn_close =  new JButton("CLOSE");
 
 		btn_save.addActionListener(this);
 		btn_search.addActionListener(this);
 		btn_edit.addActionListener(this);
 		btn_delete.addActionListener(this);
-
+		btn_close.addActionListener(this);
+		
 		setLayout(new FlowLayout());
 		add(lbl1);
 		add(txt_1);
@@ -67,6 +69,7 @@ public class JDBC_GUI_1 extends JFrame implements ActionListener{
 		add(btn_search);
 		add(btn_edit);
 		add(btn_delete);
+		add(btn_close);
 		add(lbl4);
 		add(new JScrollPane(table1));
 		setVisible(true);
@@ -164,6 +167,9 @@ public class JDBC_GUI_1 extends JFrame implements ActionListener{
 				lbl4.setText("Error: to delete record");
 			}
 			displayAll();
+		}
+		else if (e.getSource() == btn_close) { //Close
+			System.exit(0);
 		}
 	}
 
