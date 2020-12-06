@@ -158,11 +158,12 @@ public class NewDatabase {
 	public List select_all() {
 		List<Person> persons =new ArrayList<Person>();		
 		try {			
-			Connection conn = connect();
+			//Connection conn = connect();
+			
+			//Manual Connection .....			
 			String str_sql = "SELECT id, full_name, contact_address FROM person";
 			PreparedStatement pstat = conn.prepareStatement(str_sql);
-			ResultSet rs = pstat.executeQuery(); //Insert, Update, Delete			
-			
+			ResultSet rs = pstat.executeQuery(); //Insert, Update, Delete						
 			int pid;
 			String full_name;
 			String contact_address;			
