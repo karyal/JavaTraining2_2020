@@ -26,7 +26,7 @@ public class ComboBox {
 		
 		String items[]= {"ONE","TWO","THREE","FOUR","FIVE"}; //Database?
 		
-		Vector vlist1 = new Vector();
+		Vector vlist1 = new Vector(); //Items from File, Database, Web, ... other sources
 		vlist1.add("ONE");
 		vlist1.add("TWO");
 		vlist1.add("THREE");
@@ -36,13 +36,13 @@ public class ComboBox {
 		cmb2 = new JComboBox(items);
 		cmb3 = new JComboBox(vlist1);
 		
-		ComboBoxModel cmb_model = cmb3.getModel();
-		cmb4 = new JComboBox(cmb_model);
+		ComboBoxModel cmb_model = cmb1.getModel();
+		//cmb_model //Process on cmb_1
 		
 		frame.add(cmb1);
 		frame.add(cmb2);
 		frame.add(cmb3);
-		frame.add(cmb4);
+		
 		
 		frame.setVisible(true);
 	}

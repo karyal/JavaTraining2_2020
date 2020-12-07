@@ -1,0 +1,65 @@
+GUI (Graphical User Interface)
+- AWT (Abstract Windowing Tool)
+- Swing
+- JavaFX
+
+1. Awt
+https://docs.oracle.com/javase/7/docs/api/java/awt/package-summary.html
+
+2. Swing
+https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html
+
+3. JavaFx
+https://docs.oracle.com/javafx/2/api/overview-summary.html
+
+JFC (Java Foundation Classes)
+	AWT
+	SWING
+	JAVAFX
+
+Features of Swing
+- Plug-able
+- Available
+- 2D API (Graphics)
+- Internationalization (Unicode)
+- Desktop Application
+
+Components
+	- Top Level Containers
+		- JFrame
+		
+		- Applet
+		- JDialog
+	- Special Purpose Containers
+		- JInternalFrame
+		- JLayeredPane
+		- Root pane		
+	- General Purpose Containers
+		- JPanel
+		- JScrollPane
+		- JSplitPane
+		- JTabbedPane
+		- JToolBar
+	- Basic Controls
+		- JButton
+		- JCheckBox
+		- JColorChooser
+		- JComboBox
+		- JEditorPane and JTextPane
+		- JFileChooser
+		- JLabel
+		- JList
+		- JMenu
+		- JPasswordField
+		- JProgressBar
+		- JRadioButton
+		- JSeparator
+		- JSlider
+		- JSpinner
+		- JTable
+		- JTextArea
+		- JTextField
+		- JToolTip
+		- JTree
+
+		

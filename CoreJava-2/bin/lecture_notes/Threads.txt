@@ -1,0 +1,13 @@
+Threads in Java
+# Concepts
+- Expression - Valid Java Term (Word)
+- Statement - Collection of Expressions
+- Function/Method/Procedure/Properties - Collection of Statement(s)
+
+# Execution
+- Java Source Code on Java File
+- Compile Java File -> .class File
+- Run .class file -> Copy all the byte code on memory from .class file and create a Process
+- Process also called Thread.
+
+# Creating a Thread
