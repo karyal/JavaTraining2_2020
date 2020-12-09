@@ -11,7 +11,7 @@ public class Table {
 	JTable tbl1;
 	
 	public Table () {
-		frame=new JFrame("Button Test");
+		frame=new JFrame("Table");
 		frame.setSize(new Dimension(250, 250));
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

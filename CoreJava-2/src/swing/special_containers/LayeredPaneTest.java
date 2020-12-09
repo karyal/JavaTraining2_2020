@@ -31,9 +31,9 @@ public class LayeredPaneTest {
 		btn_3.setBounds(230,90,100,100);
 		
 		lPane = new JLayeredPane();
-		lPane.add(btn_1, new Integer(2));
-		lPane.add(btn_2, new Integer(1));
-		lPane.add(btn_3, new Integer(3));
+		lPane.add(btn_1, new Integer(3));
+		lPane.add(btn_2, new Integer(2));
+		lPane.add(btn_3, new Integer(1));
 		
 		frame.add(lPane);
 		frame.setVisible(true);

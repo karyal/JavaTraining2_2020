@@ -28,6 +28,7 @@ public class ScrollPaneTest {
 		panel.add(scrollPane);
 		
 		frame.setContentPane(panel);
+		//frame.setContentPane(textArea1);
 		frame.setVisible(true);		
 	}
 	

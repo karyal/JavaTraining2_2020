@@ -12,7 +12,5 @@ public class StartProgram {
 		catch (IOException e) {
 			System.out.println(e);
 		}
-
 	}
-
 }

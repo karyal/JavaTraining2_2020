@@ -17,21 +17,23 @@ public class PanelTest {
 		frame = new JFrame("Panel Test");
 		frame.setSize(new Dimension(500, 500)); 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setLayout(new FlowLayout());
-	
+		
+		
+		
 		//Panels
 		panel1 = new JPanel();
 		panel1.setSize(new Dimension(250, 250));
 		panel1.setBackground(Color.cyan);
 		panel1.add(new JButton("OK"));
-		/*
+		
 		panel2 = new JPanel();
 		panel2.setSize(new Dimension(250, 250));
 		panel2.setBackground(Color.blue);
 		panel2.add(new JButton("OK"));
-		*/
+		
+		frame.setLayout(new FlowLayout());
 		frame.add(panel1);
-		//frame.add(panel2);
+		frame.add(panel2);
 		frame.setVisible(true);
 	}
 	

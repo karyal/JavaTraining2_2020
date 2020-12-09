@@ -24,8 +24,8 @@ public class RootPaneTest {
         menubar1.add(menu1);  
         menu1.add("Open");  
         menu1.add("Close");  
-        rootPane.setJMenuBar(menubar1);  
-         
+        
+        rootPane.setJMenuBar(menubar1);           
         rootPane.getContentPane().add(new JButton("Press Me"));  
         
         frame.pack();
