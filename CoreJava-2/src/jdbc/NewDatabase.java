@@ -185,6 +185,30 @@ public class NewDatabase {
 		return persons;
 	}
 	
+	public User login(User user) {
+		Person p=new Person();
+		try {			
+			Connection conn = connect();
+			String str_sql = "SELECT * FROM users where login_name=? and login_pass =?";
+			PreparedStatement pstat = conn.prepareStatement(str_sql);
+			pstat.setString(1, user.getLoginName());
+			pstat.setString(2, user.getLoginPass());
+			
+			ResultSet rs = pstat.executeQuery(); //Select Record			
+			
+			while(rs.next()) {
+				user.setId(rs.getInt("id"));				
+			}			
+			rs.close();
+			pstat.close();
+			conn.close();
+		}
+		catch(Exception ex) {
+			System.out.println("Error : "+ex.getMessage());
+		}
+		return user;
+	}
+	
 	public static void main(String[] args) throws Exception{
 		NewDatabase db1 = new NewDatabase();
 		/*		
