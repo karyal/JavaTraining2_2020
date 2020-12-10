@@ -5,6 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomNumberTest {
 	public static void main(String[] args) {
+		
 		Random rand = new Random(); 
 		System.out.println(rand.nextInt(100)); //0-99
 		
