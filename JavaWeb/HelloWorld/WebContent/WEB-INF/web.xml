@@ -3,7 +3,7 @@
   <display-name>HelloWorld</display-name>
   
   <welcome-file-list>   
-    <welcome-file>index.jsp</welcome-file>    
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
   <!-- First Servlet -->
@@ -16,5 +16,26 @@
 	  	<servlet-name>obj1</servlet-name>
 	  	<url-pattern>/hello</url-pattern>
 	  </servlet-mapping>
-   
+  
+<!-- Second Servlet -->
+	  <servlet>
+	  	<servlet-name>obj2</servlet-name>
+	  	<servlet-class>unit1.Second</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj2</servlet-name>
+	  	<url-pattern>/second</url-pattern>
+	  </servlet-mapping>
+
+<!-- Third Servlet -->
+	<servlet>
+	  	<servlet-name>obj3</servlet-name>
+	  	<servlet-class>unit1.Third</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj3</servlet-name>
+	  	<url-pattern>/third</url-pattern>
+	  </servlet-mapping>	 
 </web-app>
