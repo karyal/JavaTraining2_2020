@@ -37,5 +37,17 @@
 	  <servlet-mapping>
 	  	<servlet-name>obj3</servlet-name>
 	  	<url-pattern>/third</url-pattern>
-	  </servlet-mapping>	 
+	  </servlet-mapping>
+
+<!-- Fourth Servlet -->
+	<servlet>
+	  	<servlet-name>obj4</servlet-name>
+	  	<servlet-class>unit1.Four</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj4</servlet-name>
+	  	<url-pattern>/four</url-pattern>
+	  </servlet-mapping>	
+	  	 	 
 </web-app>

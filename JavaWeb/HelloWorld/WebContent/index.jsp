@@ -12,6 +12,6 @@
 	<p><a href="hello">First Servlet</a></p>
 	<p><a href="second">Second Servlet</a></p>
 	<p><a href="form1.jsp">Web Form-1</a></p>
-	<p><a href="">Web Form-2 Send Two Numbers and Display Sum of Them.</a></p>
+	<p><a href="form2.jsp">Web Form-2</a></p>
 </body>
 </html>
