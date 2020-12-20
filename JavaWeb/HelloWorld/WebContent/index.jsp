@@ -13,5 +13,8 @@
 	<p><a href="second">Second Servlet</a></p>
 	<p><a href="form1.jsp">Web Form-1</a></p>
 	<p><a href="form2.jsp">Web Form-2</a></p>
+	<h3>JDBC</h3>
+	<p><a href="form3.jsp">Web Form-3 - Insert Record</a></p>
+	<p><a href="six">Display All Records</a></p>
 </body>
 </html>

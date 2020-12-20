@@ -39,7 +39,7 @@
 	  	<url-pattern>/third</url-pattern>
 	  </servlet-mapping>
 
-<!-- Fourth Servlet -->
+<!-- Four Servlet -->
 	<servlet>
 	  	<servlet-name>obj4</servlet-name>
 	  	<servlet-class>unit1.Four</servlet-class> 	
@@ -49,5 +49,26 @@
 	  	<servlet-name>obj4</servlet-name>
 	  	<url-pattern>/four</url-pattern>
 	  </servlet-mapping>	
-	  	 	 
+
+<!-- Five Servlet -->
+	<servlet>
+	  	<servlet-name>obj5</servlet-name>
+	  	<servlet-class>unit1.Five</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj5</servlet-name>
+	  	<url-pattern>/five</url-pattern>
+	  </servlet-mapping>	
+
+<!-- six Servlet -->
+	<servlet>
+	  	<servlet-name>obj6</servlet-name>
+	  	<servlet-class>unit1.Six</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj6</servlet-name>
+	  	<url-pattern>/six</url-pattern>
+	  </servlet-mapping>		  	  	 	 
 </web-app>
