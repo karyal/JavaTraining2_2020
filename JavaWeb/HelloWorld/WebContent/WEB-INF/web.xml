@@ -70,5 +70,38 @@
 	  <servlet-mapping>
 	  	<servlet-name>obj6</servlet-name>
 	  	<url-pattern>/six</url-pattern>
-	  </servlet-mapping>		  	  	 	 
+	  </servlet-mapping>	
+	  
+<!-- Seven Servlet -->
+	<servlet>
+	  	<servlet-name>obj7</servlet-name>
+	  	<servlet-class>unit1.Seven</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj7</servlet-name>
+	  	<url-pattern>/seven</url-pattern>
+	  </servlet-mapping>	  	
+
+<!-- Eight Servlet -->
+	<servlet>
+	  	<servlet-name>obj8</servlet-name>
+	  	<servlet-class>unit1.Eight</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj8</servlet-name>
+	  	<url-pattern>/eight</url-pattern>
+	  </servlet-mapping>	
+
+<!-- Nine Servlet -->
+	<servlet>
+	  	<servlet-name>obj9</servlet-name>
+	  	<servlet-class>unit1.Nine</servlet-class> 	
+	  </servlet>  
+	  
+	  <servlet-mapping>
+	  	<servlet-name>obj9</servlet-name>
+	  	<url-pattern>/nine</url-pattern>
+	  </servlet-mapping>		   
 </web-app>
