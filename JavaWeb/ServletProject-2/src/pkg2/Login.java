@@ -3,6 +3,7 @@ package pkg2;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,14 +33,20 @@ public class Login extends HttpServlet {
 		User user = new User(0, login_name , login_pass );
 		
 		MyDatabase mdb = new MyDatabase();
-		user = mdb.login(user);
+		user = mdb.login(user);		
+		
+		RequestDispatcher rds;	
 		
 		if (user.getId()>=1) {
-			out.println("Login success");
+			rds = request.getRequestDispatcher("index.jsp");
+			rds.forward(request, response);
+			//out.println("Login success");
 		}
 		else {
-			out.println("Error to login");
-		}				
-		out.close();		
+			out.println("Error: Login name of password");
+			rds = request.getRequestDispatcher("LoginForm.jsp");
+			rds.include(request, response);			
+		}
+		out.close();
 	}
 }
