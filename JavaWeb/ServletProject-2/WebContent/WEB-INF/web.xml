@@ -36,6 +36,6 @@
 	  
 	  <servlet-mapping>
 	  	<servlet-name>Obj3</servlet-name>
-	  	<url-pattern>/rdirect</url-pattern>
+	  	<url-pattern>/RedirectTest</url-pattern>
 	  </servlet-mapping>
 </web-app>
