@@ -1,0 +1,28 @@
+1. Core Java
+	- Core Proramming
+	- Control Statements (if, switch, for, do while, while, continue, break, return)
+	- Functions
+	- OOP (Encapsulation, Polymorphism, Inheritance, and Abstration)
+	- Threads
+	- Collections
+	- Exceptions
+	- File IO
+	- JDBC (MySQL/SQLite)
+	-  Swing/JavaFx - Desktop Application (UI) [Optional]
+2. HTML, CSS, JavaScript, Bootstrap (UI)
+3. Servlet
+4. JSP
+5. Develop Web Application using Java (Project)
+
+6. MVC Application
+7. Adv Features Add (Other)
+
+Possible Applications
+- FrontDesk - IS
+- Cahshier - IS
+- Stock - IS
+- Library - IS
+- Class Schedules - IS
+- Grocery - IS
+- Cafe - IS
+- Others
